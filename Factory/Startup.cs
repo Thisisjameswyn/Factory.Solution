@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using University.Models;
+using Factory.Models;
 
 
 namespace Factory
@@ -25,7 +25,7 @@ namespace Factory
     {
       services.AddMvc();
       services.AddEntityFrameworkMySql()
-          .AddDbContext<UniversityContext>(options => options
+          .AddDbContext<FactoryContext>(options => options
           .UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
     }
 
