@@ -1,0 +1,21 @@
+body {
+  background-color: lightblue;
+}
+
+p {
+  color: red;
+}
+
+h1 {
+  color: lightblue;
+  text-decoration: underline;
+}
+
+.container {
+  background-color: lightcoral;
+  height: 100vh;
+}
+
+.rb {
+  padding-left: 30px;
+}
